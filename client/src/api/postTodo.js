@@ -1,8 +1,8 @@
-import client from '../client'
+import axios from 'axios'
 
 export const postTodo = async (text) => {
     try {
-        const {data} = await client.post('/api/post', text)
+        const {data} = await axios.post('/api/post', text)
         return data
         
     } catch (error) {

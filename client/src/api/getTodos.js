@@ -1,10 +1,10 @@
-import client from '../client'
+import axios from 'axios'
 
 export const getTodos =  async () => {
 
     try {
 
-        const {data} = await client.get(`/api/get`)
+        const {data} = await axios.get(`/api/get`)
 
         return data
 

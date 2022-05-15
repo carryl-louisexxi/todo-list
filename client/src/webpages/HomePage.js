@@ -1,9 +1,9 @@
 import { Flex, Box, Heading, Text, Input, Button,} from '@chakra-ui/react' 
 import { useEffect, useState } from 'react'
 import { RiDeleteBin5Fill, RiMarkPenFill } from 'react-icons/ri'
-import { postTodo } from '../api/FetchLogic/postTodo'
-import { getTodos } from '../api/FetchLogic/getTodos'
-import { deleteTodo } from '../api/FetchLogic/deleteTodo'
+import { postTodo } from '../api/postTodo'
+import { getTodos } from '../api/getTodos'
+import { deleteTodo } from '../api/deleteTodo'
 
 
 function Task ({data, todo, setTodos}) {
